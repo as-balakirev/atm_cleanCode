@@ -27,7 +27,7 @@ class Airport {
 
 
     getBomberMilitaryPlanes() {
-        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.TRANSPORT);
+        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.BOMBER);
     }
 
     getExperimentalPlanes() {
@@ -45,7 +45,7 @@ class Airport {
     }
 
     sortByMaxLoadCapacity() {
-        this.planes.sort((a, b) => a.getMinLoadCapacity() - b.getMinLoadCapacity());
+        this.planes.sort((a, b) => a.getMaxLoadCapacity() - b.getMaxLoadCapacity());
         return this;
     }
 

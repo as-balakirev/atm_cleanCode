@@ -36,7 +36,7 @@ describe('My Test', () => {
         let transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
         let flag = false;
         for (let militaryPlane of transportMilitaryPlanes) {
-            if (militaryPlane.getMilitaryType() === MilitaryType.TYPE_TRANSPORT) {
+            if (militaryPlane.getMilitaryType() === MilitaryType.TRANSPORT) {
                 flag = true;
                 break;
             }

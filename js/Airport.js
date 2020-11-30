@@ -22,12 +22,12 @@ class Airport {
     }
 
     getTransportMilitaryPlanes() {
-        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.TYPE_TRANSPORT);
+        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.TRANSPORT);
     }
 
 
     getBomberMilitaryPlanes() {
-        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.TYPE_TRANSPORT);
+        return this.getMilitaryPlanes().filter(plane => plane.getMilitaryType() === MilitaryType.TRANSPORT);
     }
 
     getExperimentalPlanes() {

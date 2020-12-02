@@ -2,13 +2,13 @@ const Plane = require('./Plane');
 
 class PassengerPlane extends Plane {
 
-    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity, passengersCapacity) {
-        super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
-        this._passengersCapacity = passengersCapacity;
+    constructor({model:model, maxSpeed:maxSpeed, maxFlightDistance:maxFlightDistance, maxLoadCapacity:maxLoadCapacity, passengersCapacity:passengersCapacity}) {
+        super({model:model, maxSpeed:maxSpeed, maxFlightDistance:maxFlightDistance, maxLoadCapacity:maxLoadCapacity});
+        this.passengersCapacity = passengersCapacity;
     }
 
     getPassengersCapacity() {
-        return this._passengersCapacity;
+        return this.passengersCapacity;
     }
 }
 

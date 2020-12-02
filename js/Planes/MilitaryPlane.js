@@ -2,8 +2,8 @@ const Plane = require('./Plane');
 
 class MilitaryPlane extends Plane {
 
-    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity, militaryType) {
-        super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
+    constructor({model:model, maxSpeed:maxSpeed, maxFlightDistance:maxFlightDistance, maxLoadCapacity:maxLoadCapacity, militaryType:militaryType}) {
+        super({model:model, maxSpeed:maxSpeed, maxFlightDistance:maxFlightDistance, maxLoadCapacity:maxLoadCapacity});
         this.militaryType = militaryType;
 
     }
